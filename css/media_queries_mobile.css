@@ -537,7 +537,7 @@ grid-template-columns: repeat(1, minmax(100px, 1fr));
           justify-content: center;
   position: relative;
   padding: 3.2vw 10vw;
-  margin: -10.0vw 3vw 0 0;
+  margin: -11vw 3vw 0 0;
   background: #99e2d0;
   color: #109171;
   -webkit-border-radius: 1vw;
