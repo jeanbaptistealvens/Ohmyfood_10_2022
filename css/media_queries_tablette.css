@@ -645,9 +645,9 @@ grid-template-columns: repeat(2, minmax(100px, 1fr));
 
 /*html*/
 
-main {
+/*  main {
   background-color:none;
-}
+}*/
 
 .grid_6 {
   display: -ms-grid;
