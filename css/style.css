@@ -743,44 +743,14 @@ justify-items: center;
   font-size: 3.3vw;
 }
 
-.fa-heart:hover{
+.le_titre_du_conteneur_des_menus i:hover{
   font-weight: bold;
   cursor:pointer;
-  /*color: #9356DC !important; -- fond de couleur obsolète --
-  webkit-transition: 1s !important;
+  color: #9356DC !important;
+  -webkit-transition: 1s !important;
   -o-transition: 1s !important;
   -moz-transition: 1s !important;
-  transition: 1s !important;*/
-}
-
-.fa-heart:before,
-.fa-heart:after{
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  transform-origin: bottom;
-  transition: transform 0.3s;
-}
-.fa-heart:after{
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  transform: scaleY(0);  
-}
-
-.fa-heart:before{
-  background: white;
-  transform-origin: top;
-}
-
-.fa-heart:hover:before{
-  transform: scaleY(0); 
-}
-
-.fa-heart:hover:after{
-  transform: scaleY(1); 
+  transition: 1s !important;
 }
 
 .conteneur_des_menus{
