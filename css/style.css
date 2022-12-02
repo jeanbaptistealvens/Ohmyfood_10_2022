@@ -743,14 +743,14 @@ justify-items: center;
   font-size: 3.3vw;
 }
 
-.le_titre_du_conteneur_des_menus i:hover{
+.fa-heart:hover{
   font-weight: bold;
   cursor:pointer;
-  /*color: #9356DC !important; -- fond de couleur obsolète -- */
-  -webkit-transition: 1s !important;
+  /*color: #9356DC !important; -- fond de couleur obsolète --
+  webkit-transition: 1s !important;
   -o-transition: 1s !important;
   -moz-transition: 1s !important;
-  transition: 1s !important;
+  transition: 1s !important;*/
 }
 
 .fa-heart:before,
