@@ -289,7 +289,7 @@ justify-items: center;
 }
 
 .image_du_logo {
-  width: 27.5vw; 
+  width: 15.5vw; 
   height: 100%;
 }
 
@@ -625,15 +625,15 @@ justify-items: center;
 
 .liens_hypertextes {
   background-color: #353535;
-  font-size: 2vw; 
+  font-size: 1.5vw; 
   font-weight: 400;
-  padding: 30px 0 160px 27px;
+  padding: 30px 0 70px 27px;
 }
 
 .logo img{
   -webkit-filter: invert(100%);
           filter: invert(100%);
-  width: 20vw; 
+  width: 15.5vw;
   height: 100%;
   margin-left: -37px;
 }
@@ -654,7 +654,7 @@ justify-items: center;
 
 .alignement_des_liens{
   white-space: nowrap;
-  margin-left: -37px;
+  margin-left: -87px;
 }
 
 
@@ -667,13 +667,15 @@ justify-items: center;
 
 
 /*  main {
-  background-color:none;
+  background-color:none; -- désactiver : obsolète --
 }*/
 
 .grid_6 {
   display: -ms-grid;
   display: grid;
-  grid: auto-flow dense / 0 1fr;
+  /* grid: auto-flow dense / 0 1fr; -- grid obsolète : remplacer par grid auto flow et grid template columns -- */
+  grid-auto-flow: dense;
+  grid-template-columns: 0px 1fr;
   justify-items: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -702,7 +704,7 @@ justify-items: center;
 
 .bouton_de_retour{
   position: relative;
-  font-size: 4.5vw; 
+  font-size: 2.5vw; 
   left: 10vw;
 }
 
@@ -723,41 +725,73 @@ justify-items: center;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 35vw;
+  height: 25vw;
   margin: 0; 
 }
 
 .le_titre_du_conteneur_des_menus{
   display: -ms-grid;
   display: grid;
-  grid: auto-flow dense / 88% 0 1fr;
+  /*grid: auto-flow dense / 88% 0 1fr; -- grid obsolète : remplacer par grid auto flow et grid template columns -- */
+  grid-auto-flow: dense;
+  grid-template-columns: 88% 0px 1fr;
   z-index: 1;
   position: relative;
   margin: 0;
   font-family: 'Shrikhand', cursive;
   padding: 0 3.12vw 0 1.87vw;
-  font-size: 7.3vw;
+  font-size: 3.3vw;
 }
 
 .le_titre_du_conteneur_des_menus i:hover{
   font-weight: bold;
   cursor:pointer;
-  color: #9356DC !important;
+  /*color: #9356DC !important; -- fond de couleur obsolète -- */
   -webkit-transition: 1s !important;
   -o-transition: 1s !important;
   -moz-transition: 1s !important;
   transition: 1s !important;
 }
 
+.le_titre_du_conteneur_des_menus i:before,
+.le_titre_du_conteneur_des_menus i:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: bottom;
+  transition: transform 0.3s;
+}
+.le_titre_du_conteneur_des_menus i:after{
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  transform: scaleY(0);  
+}
+
+.le_titre_du_conteneur_des_menus i:before{
+  background: white;
+  transform-origin: top;
+}
+
+.le_titre_du_conteneur_des_menus i:hover:before{
+  transform: scaleY(0); 
+}
+
+.le_titre_du_conteneur_des_menus i:hover:after{
+  transform: scaleY(1); 
+}
+
 .conteneur_des_menus{
   position: relative;
-  padding: 10vw 1.69vw 30vw 1.69vw;
+  padding: 0vw 1.69vw 15vw 1.69vw;
   background-color: #eaeaea;
   -webkit-border-radius: 10vw 10vw 0 0;
      -moz-border-radius: 10vw 10vw 0 0;
-          border-radius: 10vw 10vw 0 0;
-  font-size: 3vw;
-  top: -19vw;
+          border-radius: 5vw 5vw 0 0;
+  font-size: 1.2vw;
+  top: -8vw;
 }
 
 .conteneur_du_menu {
@@ -791,7 +825,7 @@ justify-items: center;
 }
 
 .le_titre_de_service {
-  font-size: 3vw;
+  font-size: 1vw;
   font-weight: 400;
 }
 
@@ -811,8 +845,8 @@ justify-items: center;
   
 .composant_d_explorer_1{
   position: relative;
-  padding: 0 7vw 0 7vw;
-  height: 10vw;
+  padding: 0 3.5vw 0 3.5vw;
+  height: 4vw;
   color: #fbf3fc;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background-image: -webkit-linear-gradient(left top, #FF79DA, #9356DC);
@@ -850,8 +884,8 @@ justify-items: center;
 
 .le_titre_de_service h3::after {
   content: '';
-  width: 8vw;
-  height: 0.7vw;
+  width: 3vw;
+  height: 0.35vw;
   background: #99e2d0;
   position: absolute;
   left: 0;
@@ -878,7 +912,7 @@ overflow: hidden;
     -ms-flex-align: center;
         align-items: center;
 width: 100%;
-height: 10vw;
+height: 6vw;
 -webkit-border-radius: 2vw;
    -moz-border-radius: 2vw;
         border-radius: 2vw;
@@ -1162,7 +1196,7 @@ background-color: white;
     -webkit-transform: scaleX(-50px);
             -moz-transform: scaleX(-50px);
               -o-transform: scaleX(-50px);
-         transform: scaleX(-50px);
+      /* transform: scaleX(-50px); transform scaleX non valide et n'engendre aucune action d'animation */
   }
 }
 

@@ -646,13 +646,15 @@ grid-template-columns: repeat(2, minmax(100px, 1fr));
 /*html*/
 
 /*  main {
-  background-color:none;
+  background-color:none; -- désactiver : obsolète --
 }*/
 
 .grid_6 {
   display: -ms-grid;
   display: grid;
-  grid: auto-flow dense / 0 1fr;
+  /* grid: auto-flow dense / 0 1fr; -- grid obsolète : remplacer par grid auto flow et grid template columns -- */
+  grid-auto-flow: dense;
+  grid-template-columns: 0px 1fr;
   justify-items: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -709,7 +711,9 @@ grid-template-columns: repeat(2, minmax(100px, 1fr));
 .le_titre_du_conteneur_des_menus{
   display: -ms-grid;
   display: grid;
-  grid: auto-flow dense / 88% 0 1fr;
+  /*grid: auto-flow dense / 88% 0 1fr; -- grid obsolète : remplacer par grid auto flow et grid template columns -- */
+  grid-auto-flow: dense;
+  grid-template-columns: 88% 0px 1fr;
   z-index: 1;
   position: relative;
   margin: 0;
@@ -1141,7 +1145,7 @@ background-color: white;
     -webkit-transform: scaleX(-50px);
             -moz-transform: scaleX(-50px);
               -o-transform: scaleX(-50px);
-         transform: scaleX(-50px);
+       /* transform: scaleX(-50px); transform scaleX non valide et n'engendre aucune action d'animation */
   }
 }
 
