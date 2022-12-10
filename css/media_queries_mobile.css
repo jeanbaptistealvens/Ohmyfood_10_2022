@@ -6,6 +6,7 @@
 */
 
 /* début index */
+
 html { overflow-x: hidden; }
 
 body {
@@ -25,7 +26,7 @@ body {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 155vh;
+  height: 100vh;
   background-color: #527c8d;
   inset: 0;
   z-index: 2;
@@ -609,11 +610,28 @@ grid-template-columns: repeat(1, minmax(100px, 1fr));
 .ville_de_la_carte i:hover {
   font-weight:bold;
   cursor:pointer;
-  color: #9356DC !important;
-  -webkit-transition: 1s !important;
-  -o-transition: 1s !important;
-  -moz-transition: 1s !important;
-  transition: 1s !important;
+  color: transparent;
+  font-size: 2vw;
+  bottom: 2vw;
+  left: 1.4vw;
+  top: -7vw;
+}
+
+.ville_de_la_carte i::after {
+  position: absolute;
+  content: "\f004";
+  font-size: 2rem;
+  transform: translateX(-70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  font-size: 6vw;
+  right: 5vw;
+}
+
+.ville_de_la_carte i:hover::after {
+  opacity: 1;
 }
 
 .liens_hypertextes {
@@ -737,11 +755,29 @@ grid-template-columns: repeat(1, minmax(100px, 1fr));
 .le_titre_du_conteneur_des_menus i:hover{
   font-weight: bold;
   cursor:pointer;
-  color: #9356DC !important;
+  color: transparent !important;
   -webkit-transition: 1s !important;
   -o-transition: 1s !important;
   -moz-transition: 1s !important;
   transition: 1s !important;
+  font-size: 7.3vw;
+  
+}
+
+.le_titre_du_conteneur_des_menus i::after {
+  position: absolute;
+  content: "\f004";
+  font-size: 2rem;
+  transform: translateX(-99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  font-size: 7.3vw;
+}
+
+.le_titre_du_conteneur_des_menus i:hover::after {
+  opacity: 1;
 }
 
 .conteneur_des_menus{

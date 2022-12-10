@@ -6,6 +6,7 @@
 */
 
 /* début index */
+
 html { overflow-x: hidden; }
 
 body {
@@ -25,7 +26,7 @@ body {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 155vh;
+  height: 100vh;
   background-color: #527c8d;
   inset: 0;
   z-index: 2;

@@ -25,7 +25,7 @@ body {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 155vh;
+  height: 100vh;
   background-color: #527c8d;
   inset: 0;
   z-index: 2;
@@ -289,7 +289,7 @@ justify-items: center;
 }
 
 .image_du_logo {
-  width: 11.5vw; 
+  width: 30vw; 
   height: 100%;
 }
 
@@ -311,7 +311,7 @@ justify-items: center;
   background-color: transparent;
   color: black;
   border: none;
-  font-size: 1vw;
+  font-size: 2vw;
   position: relative;
   left: 6.5vw;
 }
@@ -331,11 +331,11 @@ justify-items: center;
 }
 
 .conteneur_des_slogans h1 {
-  font-size: 1vw;
+  font-size: 2.5vw;
 } 
 
 .conteneur_des_slogans p {
-  font-size: 1vw;
+  font-size: 2vw;
 }
 
 .slogan {
@@ -344,8 +344,8 @@ justify-items: center;
 }
 
 .composant_d_explorer{
-  padding: 0 1vw 0 1vw;
-  height: 3.5vw;
+  padding: 0 2vw 0 2vw;
+  height: 6.5vw;
   color: #fbf3fc;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background-image: -webkit-linear-gradient(left top, #FF79DA, #9356DC);
@@ -364,7 +364,7 @@ justify-items: center;
 
 .composant_d_explorer:last-child{
   white-space: nowrap;
-  font-size: 0.8vw;
+  font-size: 2vw;
 }
 
 .composant_d_explorer:hover{
@@ -377,7 +377,7 @@ justify-items: center;
 }
 
 .titre_fonctionnement { 
-  font-size: 1vw;
+  font-size: 2vw;
   padding: 56px 0 0 40px;
   background-color: white;
 }
@@ -417,10 +417,10 @@ justify-items: center;
   counter-increment: etapes;
   color: white;
   background-color: #9356dc;
-  top: 2.5vw;
-  left: -0.6vw;
-  height: 1.3vw;
-  width: 1.3vw;
+  top: 5.5vw;
+  left: -1.6vw;
+  height: 2.5vw;
+  width: 2.5vw;
   z-index: 1;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -454,7 +454,7 @@ justify-items: center;
   display: -ms-flexbox;
   display: flex;
   padding: 0 10vw 0 5.5vw;
-  font-size: 0.8vw;
+  font-size: 2vw;
   border: none;
   width: 70%;
   cursor: pointer;
@@ -464,11 +464,11 @@ justify-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 4vw;
+  height: 8vw;
   -webkit-border-radius: 1.8vw;
      -moz-border-radius: 1.8vw;
           border-radius: 1vw;
-  white-space: nowrap;
+  /*! white-space: nowrap; */
   -webkit-box-shadow: 0.5vw 0.5vw 0.5vw #d5d5d5;
      -moz-box-shadow: 0.5vw 0.5vw 0.5vw #d5d5d5;
           box-shadow: 0.5vw 0.5vw 0.5vw #d5d5d5;
@@ -491,7 +491,7 @@ justify-items: center;
 
 .titre_restaurants{ 
   padding: 56px 0 0 40px;
-  font-size: 1vw;
+  font-size: 2vw;
   background-color: #eaeaea;
 }
 
@@ -551,7 +551,7 @@ justify-items: center;
      -moz-border-radius: 0.5vw;
           border-radius: 0.5vw;
   top: 7vw;
-  font-size: 0.7vw;
+  font-size: 1.5vw;
   white-space: nowrap;
   width: 2vw;
   height: 50%;
@@ -579,7 +579,7 @@ justify-items: center;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1vw;
+  font-size: 2vw;
   color: #000;
   white-space: nowrap;
 }
@@ -589,7 +589,7 @@ justify-items: center;
 }
 
 .ville_de_la_carte {
-  font-size: 1vw;
+  font-size: 1.8vw;
   white-space: nowrap;
   color: #000;
   opacity: 70%;
@@ -607,35 +607,50 @@ justify-items: center;
      -moz-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-size: 1vw;
+  font-size: 2vw;
   bottom: 2vw;
-  right: 1vw;
-  top: -1.5vw;
+  top: -1.2vw;
 }
 
 .ville_de_la_carte i:hover {
   font-weight:bold;
   cursor:pointer;
-  color: #9356DC !important;
-  -webkit-transition: 1s !important;
-  -o-transition: 1s !important;
-  -moz-transition: 1s !important;
-  transition: 1s !important;
+  color: transparent;
+  font-size: 2vw;
+  bottom: 2vw;
+  left: 1.4vw;
+  top: -1.2vw;
+}
+
+.ville_de_la_carte i::after {
+  position: absolute;
+  content: "\f004";
+  font-size: 2rem;
+  transform: translateX(-70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  font-size: 2vw;
+}
+
+.ville_de_la_carte i:hover::after {
+  opacity: 1;
 }
 
 .liens_hypertextes {
   background-color: #353535;
-  font-size: 0.8vw; 
+  font-size: 1.5vw; 
   font-weight: 400;
-  padding: 30px 0 70px 27px;
+  padding: 30px 0 175px 27px;
 }
 
 .logo img{
   -webkit-filter: invert(100%);
           filter: invert(100%);
-  width: 8.5vw;
+  width: 14.5vw;
   height: 100%;
-  margin-left: -37px;
+  margin-left: -5vh;
 }
 
 .liens_hypertextes ul {
@@ -649,7 +664,7 @@ justify-items: center;
 .liens_hypertextes a {  
   list-style: none;
   margin-left: 12.35px;
-  margin-right: 93px;
+  margin-right: -17px;
 }
 
 .alignement_des_liens{
@@ -706,7 +721,7 @@ justify-items: center;
 
 .bouton_de_retour{
   position: relative;
-  font-size: 1.5vw; 
+  font-size: 3vw; 
   left: 10vw;
 }
 
@@ -743,17 +758,34 @@ justify-items: center;
   font-family: 'Shrikhand', cursive;
   padding: 0 3.12vw 0 1.87vw;
   font-size: 3.3vw;
-  font-size: 2vw;
 }
 
 .le_titre_du_conteneur_des_menus i:hover{
   font-weight: bold;
   cursor:pointer;
-  color: #9356DC !important;
+  color: transparent !important;
   -webkit-transition: 1s !important;
   -o-transition: 1s !important;
   -moz-transition: 1s !important;
   transition: 1s !important;
+  font-size: 3.3vw;
+  
+}
+
+.le_titre_du_conteneur_des_menus i::after {
+  position: absolute;
+  content: "\f004";
+  font-size: 2rem;
+  transform: translateX(-99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  font-size: 3.3vw;
+}
+
+.le_titre_du_conteneur_des_menus i:hover::after {
+  opacity: 1;
 }
 
 .conteneur_des_menus{
@@ -763,7 +795,7 @@ justify-items: center;
   -webkit-border-radius: 10vw 10vw 0 0;
      -moz-border-radius: 10vw 10vw 0 0;
           border-radius: 5vw 5vw 0 0;
-  font-size: 1vw;
+  font-size: 1.2vw;
   top: -8vw;
 }
 
@@ -840,7 +872,7 @@ justify-items: center;
 .conteneur_du_bouton_commander {
   text-align: center;
   background-color: #eaeaea;
-  top: 220px;
+  top: 15vw;
   position: relative;
 }
 
