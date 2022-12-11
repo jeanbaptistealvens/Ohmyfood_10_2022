@@ -685,7 +685,7 @@ grid-template-columns: repeat(2, minmax(100px, 1fr));
   display: grid;
   grid-gap: 2.5vw;
   -ms-grid-columns: minmax(100px, 1fr) 2.5vw minmax(100px, 1fr) 2.5vw minmax(100px, 1fr);
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-columns: repeat(1, minmax(100px, 1fr));
   justify-items: center;
 }
 
@@ -785,7 +785,7 @@ grid-template-columns: repeat(2, minmax(100px, 1fr));
   -webkit-border-radius: 10vw 10vw 0 0;
      -moz-border-radius: 10vw 10vw 0 0;
           border-radius: 10vw 10vw 0 0;
-  font-size: 1.25vw;
+  font-size: -8.8vw;
   top: -19vw;
 }
 
@@ -856,7 +856,7 @@ grid-template-columns: repeat(2, minmax(100px, 1fr));
      -moz-box-shadow: 2vw 2vw 2vw #d5d5d5;
           box-shadow: 2vw 2vw 2vw #d5d5d5;
   cursor: pointer;
-  left: 34vw;
+  /*! left: 34vw; */
 }
 
 .conteneur_du_bouton_commander {
@@ -962,7 +962,7 @@ background-color: white;
   right: 0;
   padding: 0 0.81vw;
   height: 100%;
-  width: 2vw; 
+  width: 5vw; 
 }
 
 .menu .valider i {
