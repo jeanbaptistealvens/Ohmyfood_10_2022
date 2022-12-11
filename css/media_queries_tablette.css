@@ -730,6 +730,7 @@ grid-template-columns: repeat(2, minmax(100px, 1fr));
   display: grid;
   /*grid: auto-flow dense / 88% 0 1fr; -- grid obsolète : remplacer par grid auto flow et grid template columns -- */
   grid-auto-flow: dense;
+  -ms-grid-columns: 88% 0px 1fr;
   grid-template-columns: 88% 0px 1fr;
   z-index: 1;
   position: relative;
@@ -755,12 +756,22 @@ grid-template-columns: repeat(2, minmax(100px, 1fr));
   position: absolute;
   content: "\f004";
   font-size: 2rem;
-  transform: translateX(-99%);
+  -webkit-transform: translateX(-99%);
+     -moz-transform: translateX(-99%);
+      -ms-transform: translateX(-99%);
+       -o-transform: translateX(-99%);
+          transform: translateX(-99%);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(147, 86, 220)), to(rgb(255, 121, 218)));
+  background-image: -webkit-linear-gradient(bottom, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-image: -moz-linear-gradient(bottom, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-image: -o-linear-gradient(bottom, rgb(147, 86, 220), rgb(255, 121, 218));
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   font-size: 7.3vw;
+  top: 0vw;
+  right: 0vw;
 }
 
 .le_titre_du_conteneur_des_menus i:hover::after {
@@ -1027,6 +1038,8 @@ background-color: white;
   padding: 10px 20px;
   margin: 50px 0;
   font-size: 9px;
+  top: -0.1vw;
+  left: 87.5vw;
 }
 
 .menu__button:hover {

@@ -626,10 +626,18 @@ justify-items: center;
   position: absolute;
   content: "\f004";
   font-size: 2rem;
-  transform: translateX(-70%);
+  -webkit-transform: translateX(-70%);
+     -moz-transform: translateX(-70%);
+      -ms-transform: translateX(-70%);
+       -o-transform: translateX(-70%);
+          transform: translateX(-70%);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(147, 86, 220)), to(rgb(255, 121, 218)));
+  background-image: -webkit-linear-gradient(bottom, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-image: -moz-linear-gradient(bottom, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-image: -o-linear-gradient(bottom, rgb(147, 86, 220), rgb(255, 121, 218));
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   font-size: 2vw;
 }
@@ -751,6 +759,7 @@ justify-items: center;
   display: grid;
   /*grid: auto-flow dense / 88% 0 1fr; -- grid obsolète : remplacer par grid auto flow et grid template columns -- */
   grid-auto-flow: dense;
+  -ms-grid-columns: 88% 0px 1fr;
   grid-template-columns: 88% 0px 1fr;
   z-index: 1;
   position: relative;
@@ -776,12 +785,22 @@ justify-items: center;
   position: absolute;
   content: "\f004";
   font-size: 2rem;
-  transform: translateX(-99%);
+  -webkit-transform: translateX(0%);
+     -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+       -o-transform: translateX(0%);
+          transform: translateX(0%);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(147, 86, 220)), to(rgb(255, 121, 218)));
+  background-image: -webkit-linear-gradient(bottom, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-image: -moz-linear-gradient(bottom, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-image: -o-linear-gradient(bottom, rgb(147, 86, 220), rgb(255, 121, 218));
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   font-size: 3.3vw;
+  top: 0vw;
+  right: 11.15vw;
 }
 
 .le_titre_du_conteneur_des_menus i:hover::after {
