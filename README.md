@@ -3,8 +3,8 @@
 Notes sur l'évaluation concernant les points .3 et .5 à corriger :
 
 .3 Après vérification, aucune marge blanche droite n'est visible dans les dernières versions de Microsoft Edge, Mozilla et Chrome. Ce site est compatible via les préfixes automatiques pour 103 versions de navigateurs web.
-Pour des raisons de lisibilité, les tailles de police des pages restaurant pour la version tablette [media="screen only and (min-width : 710px) and (max-width : 799px)"], celui-ci a été optimisé. En effet, une correction a été apportée : l'ancienne version intégrant la propriété de grille à 3 colonnes a été passée à la nouvelle version à une colonne.
-De plus, les tailles de police sont toutes lisibles. Il n'y a pas ce problème sur la version desktop. Je ne favoriserais pas les pixels pour des tailles cohérentes. Il est clairement mentionné dans le brief ci-dessous que sur tablette et desktop, le site devra s'adapter, mais ces supports ne sont pas prioritaires, leur mise en page est libre et il n'y a aucune obligation d'utiliser des pixels.
+Pour des raisons de lisibilité, les textes des pages restaurant pour la version tablette [media="screen only and (min-width : 710px) and (max-width : 799px)"], celui-ci a été optimisé. En effet, une correction a été apportée : l'ancienne version intégrant la propriété de grille à 3 colonnes a été passée à la nouvelle version à une colonne.
+De plus, les textes sont toutes lisibles. Il n'y a pas ce problème sur la version desktop. Je ne favoriserais pas les pixels pour des tailles cohérentes. Il est clairement mentionné dans le brief ci-dessous que sur tablette et desktop, le site devra s'adapter, mais ces supports ne sont pas prioritaires, leur mise en page est libre et il n'y a aucune obligation d'utiliser des pixels.
 Le cœur est en dégradé de couleur comme le montre le modèle.
 Les 3 points du loader sont visibles et centrés sur les versions mobile, tablette et desktop.
 
