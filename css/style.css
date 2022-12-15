@@ -455,7 +455,7 @@ justify-items: center;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 10vw 0 5.5vw;
+  padding: 0 0 0 5.5vw;
   font-size: 2vw;
   border: none;
   width: 80%;
