@@ -301,11 +301,11 @@ grid-template-columns: repeat(1, minmax(100px, 1fr));
   background-color: #eaeaea;
 }
 
-.formulaire_de_recherche {
+/*.formulaire_de_recherche {
   padding-right: 85.8px;
-}
+}*/
 
-.fa-location-dot, .composant_de_recherche:last-child, ::-moz-placeholder { /* Mozilla Firefox 19+ */
+::-webkit-input-placeholder { /* Mozilla Firefox 19+ */
   padding-right: 1.51vw;
   font-weight: bold !important;
   background-color: transparent;
@@ -314,6 +314,61 @@ grid-template-columns: repeat(1, minmax(100px, 1fr));
   font-size: 4vw;
   position: relative;
   left: 12.2vw;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 19+ */
+  padding-right: 1.51vw;
+  font-weight: bold !important;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 4vw;
+  position: relative;
+  left: 12.2vw;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  padding-right: 1.51vw;
+  font-weight: bold !important;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 4vw;
+  position: relative;
+  left: 12.2vw;
+}
+
+:-ms-input-placeholder { /* Mozilla Firefox 19+ */
+  padding-right: 1.51vw;
+  font-weight: bold !important;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 4vw;
+  position: relative;
+  left: 12.2vw;
+}
+
+::-ms-input-placeholder { /* Mozilla Firefox 19+ */
+  padding-right: 1.51vw;
+  font-weight: bold !important;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 4vw;
+  position: relative;
+  left: 12.2vw;
+}
+
+.fa-location-dot, .composant_de_recherche:last-child, ::placeholder { /* Mozilla Firefox 19+ */
+  padding-right: 1.2vw;
+  font-weight: bold !important;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 4vw;
+  position: relative;
+  left: 3.5vw;
 }
 
 .fa-location-dot, .composant_de_recherche:last-child:hover {

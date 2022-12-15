@@ -204,9 +204,6 @@ button,
 input {
     /* 1 */
     overflow: visible;
-    border: none;
-    background: transparent;
-    margin-left: 10px;
 }
 
 /**

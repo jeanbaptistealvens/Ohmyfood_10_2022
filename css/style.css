@@ -301,11 +301,11 @@ justify-items: center;
   background-color: #eaeaea;
 }
 
-.formulaire_de_recherche {
+/*.formulaire_de_recherche {
   padding-right: 148.8px;
-}
+}*/
 
-.fa-location-dot, .composant_de_recherche:last-child, ::-moz-placeholder { /* Mozilla Firefox 19+ */
+::-webkit-input-placeholder { /* Mozilla Firefox 19+ */
   padding-right: 1.2vw;
   font-weight: bold !important;
   background-color: transparent;
@@ -314,6 +314,61 @@ justify-items: center;
   font-size: 2vw;
   position: relative;
   left: 6.5vw;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 19+ */
+  padding-right: 1.2vw;
+  font-weight: bold !important;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 2vw;
+  position: relative;
+  left: 6.5vw;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  padding-right: 1.2vw;
+  font-weight: bold !important;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 2vw;
+  position: relative;
+  left: 6.5vw;
+}
+
+:-ms-input-placeholder { /* Mozilla Firefox 19+ */
+  padding-right: 1.2vw;
+  font-weight: bold !important;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 2vw;
+  position: relative;
+  left: 6.5vw;
+}
+
+::-ms-input-placeholder { /* Mozilla Firefox 19+ */
+  padding-right: 1.2vw;
+  font-weight: bold !important;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 2vw;
+  position: relative;
+  left: 6.5vw;
+}
+
+.fa-location-dot, .composant_de_recherche:last-child, ::placeholder { /* Mozilla Firefox 19+ */
+  padding-right: 1.2vw;
+  font-weight: bold !important;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 2vw;
+  position: relative;
+  right: 1.3vw;
 }
 
 .fa-location-dot, .composant_de_recherche:last-child:hover {
@@ -386,7 +441,7 @@ justify-items: center;
   counter-reset: etapes;
   /*padding: 0vw 0 2vw 12.4vw;*/
   /*margin-top: 5vw;*/
-  margin-left: 5.2vw;
+  margin-left: 3.5vw;
 }
 
 .conteneur_de_composant_de_fonctionnement {
@@ -455,7 +510,7 @@ justify-items: center;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0 0 5.5vw;
+  /*padding: 0 0 0 5.5vw;*/
   font-size: 2vw;
   border: none;
   width: 80%;
