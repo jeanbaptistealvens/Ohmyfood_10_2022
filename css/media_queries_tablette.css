@@ -786,7 +786,7 @@ grid-template-columns: repeat(2, minmax(100px, 1fr));
   -webkit-border-radius: 10vw 10vw 0 0;
      -moz-border-radius: 10vw 10vw 0 0;
           border-radius: 10vw 10vw 0 0;
-  font-size: -8.8vw;
+  /*font-size: -8.8vw;*/
   top: -19vw;
 }
 
