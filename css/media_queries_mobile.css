@@ -384,12 +384,12 @@ grid-template-columns: repeat(1, minmax(100px, 1fr));
 
 .conteneur_de_fonctionnement{
   counter-reset: etapes;
-  padding-left: 24.8vw;
+  /*! padding-left: 24.8vw; */
   margin-top: -5vw;
 }
 
 .conteneur_de_composant_de_fonctionnement {
-  padding: 0 0 80px 40px;
+  padding: 0 0 80px 0;
 }
 
 .conteneur_de_fonctionnement h2{
@@ -448,10 +448,10 @@ grid-template-columns: repeat(1, minmax(100px, 1fr));
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 40vw 0 14vw;
+  padding: 0 0 0 14vw;
   font-size: 5vw;
   border: none;
-  width: 73%;
+  width: 108%;
   cursor: pointer;
   overflow: hidden;
   -webkit-box-align: center;

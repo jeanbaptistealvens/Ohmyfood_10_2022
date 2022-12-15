@@ -384,7 +384,9 @@ justify-items: center;
 
 .conteneur_de_fonctionnement{
   counter-reset: etapes;
-  padding: 0vw 0 2vw 12.4vw;
+  /*padding: 0vw 0 2vw 12.4vw;*/
+  /*margin-top: 5vw;*/
+  margin-left: 5.2vw;
 }
 
 .conteneur_de_composant_de_fonctionnement {
@@ -394,7 +396,7 @@ justify-items: center;
   -ms-grid-columns: minmax(100px, 1fr) 14vw minmax(100px, 1fr) 14vw minmax(100px, 1fr);
   grid-template-columns: repeat(3, minmax(100px, 1fr));
   justify-items: center;
-  padding: 0 0 80px 40px;
+  padding: 0 0 80px 0;
 }
 
 .conteneur_de_fonctionnement h2{
@@ -456,7 +458,7 @@ justify-items: center;
   padding: 0 10vw 0 5.5vw;
   font-size: 2vw;
   border: none;
-  width: 70%;
+  width: 80%;
   cursor: pointer;
   overflow: hidden;
   -webkit-box-align: center;
